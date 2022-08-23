@@ -1,6 +1,4 @@
-@import './scss/fonts.scss';
-@import './scss/scaffolding.scss';
-@import './scss/visually-hidden.scss';
-@import './scss/variables.scss';
-@import './scss/mixins.scss';
-@import './normalize.css';
+@forward './scss/fonts.scss';
+@forward './scss/scaffolding.scss';
+@forward './scss/visually-hidden.scss';
+@forward './normalize.css';
