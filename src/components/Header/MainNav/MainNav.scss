@@ -1,0 +1,23 @@
+@use '../../../scss/mixins/text.scss';
+@use '../../../scss/variables/colors.scss';
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main-nav__link {
+  @include text.main-nav;
+  padding: 5px;
+  color: colors.$main;
+
+  &:hover {
+    border-bottom: 1px solid colors.$main;
+  }
+
+  &:active {
+    color: colors.$accent;
+    border-bottom: none;
+  }
+}
