@@ -1,0 +1,32 @@
+@use '../../scss/mixins/containers.scss';
+@use '../../scss/mixins/text.scss';
+@use '../../scss/variables/colors.scss';
+
+.about {
+  @include containers.center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 323px;
+  padding: 60px 0 70px;
+  background: url('../../img/bunner.png') bottom 50px right 28px no-repeat;
+  background-size: 400px auto;
+}
+
+.about__text {
+  @include text.about;
+  width: 50%;
+  margin-bottom: 30px;
+  color: colors.$main;
+}
+
+.button {
+  @include text.button;
+  width: fit-content;
+  padding: 15px 30px;
+  text-align: center;
+  color: #fff;
+  background: colors.$accent;
+  // box-shadow: 4px 8px 24px rgba(colors.$accent, 0.25);
+  border-radius: 100px;
+}
