@@ -1,0 +1,13 @@
+@use '../../scss/mixins/text.scss';
+@use '../../scss/variables/colors.scss';
+
+@mixin button {
+  @include text.button;
+  width: fit-content;
+  padding: 15px 30px;
+  text-align: center;
+  color: #fff;
+  background: colors.$accent;
+  // box-shadow: 4px 8px 24px rgba(colors.$accent, 0.25);
+  border-radius: 100px;
+}

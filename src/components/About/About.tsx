@@ -11,7 +11,7 @@ const About = ():JSX.Element => {
       <p className="about__text">
         Здесь вы можете оценить питомцев других пользователей, а также поделиться своим любимым пушистиком!
       </p>
-      <Link to={AppUrl.USER_PETS_ADD} className="about__add-button button">Поделиться питомцем</Link>
+      <Link to={AppUrl.USER_PETS_ADD} className="about__add-button">Поделиться питомцем</Link>
     </section>
   );
 };
