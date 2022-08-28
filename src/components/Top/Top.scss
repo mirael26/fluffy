@@ -1,0 +1,117 @@
+@use '../../scss/mixins/text.scss';
+@use '../../scss/mixins/containers.scss';
+@use '../../scss/mixins/ui.scss';
+@use '../../scss/variables/colors.scss';
+
+.top {
+  @include containers.center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 70px;
+}
+
+.top__title {
+  @include text.h2;
+  margin-bottom: 30px;
+  color: colors.$main;
+}
+
+.top__wrapper {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px 30px;
+  background: colors.$bg;
+  border-radius: 50px;
+}
+
+.top__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.top__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.top__caption {
+  @include text.common;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  padding: 5px 12px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background: colors.$accent;
+  border-radius: 11px;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 30%);
+}
+
+.top__image {
+  width: 170px;
+  margin-bottom: 20px;
+  border-radius: 33px;
+}
+
+.top__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center 
+}
+
+.top__name {
+  @include text.common;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 5px;
+  padding: 0 29px 0 5px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: colors.$main;
+
+  &--male::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: 0px;
+    width: 21px;
+    height: 22px;
+    background: url('../../img/male-icon.svg') center no-repeat;
+    background-size: 21px auto;
+  }
+
+  &--female::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: 0px;
+    width: 23px;
+    height: 26px;
+    background: url('../../img/female-icon.svg') center no-repeat;
+    background-size: auto 26px;
+  }
+}
+
+.top__owner {
+  @include text.common;
+  font-size: 20px;
+  text-align: center;
+  max-width: 100%;
+  color: colors.$main;
+} 
+
+.top__vote-button {
+  @include ui.button;
+}

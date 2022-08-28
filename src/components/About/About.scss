@@ -9,9 +9,15 @@
   flex-direction: column;
   justify-content: flex-end;
   min-height: 323px;
-  padding: 60px 0 70px;
+  padding: 50px 0 70px;
   background: url('../../img/bunner.png') bottom 50px right 28px no-repeat;
   background-size: 400px auto;
+}
+
+.about__lead {
+  @include text.h2;
+  margin-bottom: 15px;
+  color: colors.$main;
 }
 
 .about__text {
