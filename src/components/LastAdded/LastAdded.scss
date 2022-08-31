@@ -1,0 +1,32 @@
+@use '../../scss/mixins/text.scss';
+@use '../../scss/mixins/containers.scss';
+@use '../../scss/mixins/ui.scss';
+@use '../../scss/variables/colors.scss';
+
+.last-added {
+  @include containers.center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 60px;
+}
+
+.last-added__title {
+  @include text.h2;
+  margin-bottom: 30px;
+  color: colors.$main;
+}
+
+.last-added__title__wrapper {
+  width: 100%;
+  padding: 40px 25px 30px;
+  background: colors.$bg;
+  border-radius: 50px;
+}
+
+.last-added__showmore-button {
+  @include ui.button;
+  display: block;
+  margin-top: 30px;
+  margin: 30px auto 0;
+}

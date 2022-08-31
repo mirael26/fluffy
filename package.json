@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
+    "embla-carousel-react": "^7.0.1",
     "node-sass": "^7.0.1",
     "postcss-loader": "^7.0.0",
     "react": "^18.0.0",

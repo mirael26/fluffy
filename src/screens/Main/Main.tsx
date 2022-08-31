@@ -3,6 +3,7 @@ import * as React from 'react';
 import Header from '../../components/Header/Header';
 import About from '../../components/About/About';
 import Top from '../../components/Top/Top';
+import LastAdded from '../../components/LastAdded/LastAdded';
 
 const ScreensMain = ():JSX.Element => {
   return (
@@ -11,6 +12,7 @@ const ScreensMain = ():JSX.Element => {
       <Header/>
       <About/>
       <Top/>
+      <LastAdded/>
     </>
   )
 };
